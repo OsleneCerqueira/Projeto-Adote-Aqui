@@ -42,7 +42,6 @@ body{
 .logo:hover{
     height: 60px;
     width: 60px;
-    border-radius:100% ;
 }
 
 .texto-logo{
@@ -63,12 +62,12 @@ body{
     
     font-family: 'Sarala', sans-serif;
     color: orange;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 15px;
     transition: font-size 1s;
     padding: 14px;
 }
-.alinhar{
+.menu-list{
     display: flex;
 }
 
@@ -129,6 +128,7 @@ body{
 
 .fotos{
     width: 100%;
+    height:45%
 }
 
 .info-pet {
@@ -142,14 +142,12 @@ body{
     background-color:wheat;
     font-size: 20px;
 }
-.texto-info{
-    background-color:chocolate;
+.texto-info li, li{
     font-size: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-li{
     list-style-type: none;
+    margin-bottom: 15px;
 }
+
 .rodape{
     display: flex;
     flex-direction: row;
@@ -177,44 +175,55 @@ li{
     margin-right: 20px;
 }
 
-
 @media(max-width:700px){
     body {
-        margin: 0 15px 0 15px;
+        margin: 15px 15px 15px 15px;
     }
 
     .cabecalho{
-        display: inline-block;
         direction: column;
-        height: 300px;
+        height: 90px;
+        width: 100%;
         align-items: center;
         justify-content: center;
     }
 
-    .logo{
+    .imagem-logo{
         display: none;
     }
-    .alinhar{
-        display: inline-block;
-        align-items: center;
+
+    .menu{
+        width: 100%;
+        text-align: center;
+        margin:0;
     }
-    
+    .menu-itens{
+        font-size: 25px;
+        margin-right: 20px;
+        margin-left: 20px;
+        transition: font-size 1s;
+        padding:15px;
+    }
+    .menu-itens:hover{
+        font-size: 28px;
+    }
+
     .container, .sessao1, .item1, .item2, .item3 {
         width: 100%;
     }
 .sessao1{
-    display: inline-block;
+    display: block;
     text-align: center;
     direction:column;
-    height: 700px
+    height: 800px
+}
+.img-sessao{
+    width: 100%;
+    height: 50%;
 }
 
 .text-sessao p{
     font-size: 20px;
+    font-weight: 500;
 }
-
-
-    .item2 {
-        order: initial; 
-    }
 }
